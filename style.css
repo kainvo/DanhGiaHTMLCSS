@@ -1,0 +1,964 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bs-orange-color: #DA722C;
+  --bs-dark-blue-color: #023047;
+  --bs-dark-color: #070917;
+  --bs-light-color: #E8F7FB;
+  --bs-light-blue-color: #6F7DFB;
+  --bs-blue-color: #057ADA;
+}
+
+.btn {
+  color: white;
+  background-color: #DA722C;
+  border-color: rgba(0, 0, 0, 0);
+  padding: 5px 40px;
+  font-size: 18px;
+  line-height: 42px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 800;
+  text-align: center;
+  color: none;
+  font-family: "Raleway", sans-serif;
+}
+.btn:focus, .btn.focus {
+  color: white;
+  background-color: #b45b1f;
+  border-color: rgba(0, 0, 0, 0);
+}
+.btn:hover {
+  color: white;
+  background-color: #b45b1f;
+  border-color: rgba(0, 0, 0, 0);
+}
+.btn:active, .btn.active, .open > .btn.dropdown-toggle {
+  color: white;
+  background-color: #b45b1f;
+  background-image: none;
+  border-color: rgba(0, 0, 0, 0);
+}
+.btn:active:hover, .btn:active:focus, .btn:active.focus, .btn.active:hover, .btn.active:focus, .btn.active.focus, .open > .btn.dropdown-toggle:hover, .open > .btn.dropdown-toggle:focus, .open > .btn.dropdown-toggle.focus {
+  color: white;
+  background-color: #954c1a;
+  border-color: rgba(0, 0, 0, 0);
+}
+.btn.disabled:hover, .btn.disabled:focus, .btn.disabled.focus, .btn[disabled]:hover, .btn[disabled]:focus, .btn[disabled].focus, fieldset[disabled] .btn:hover, fieldset[disabled] .btn:focus, fieldset[disabled] .btn.focus {
+  background-color: #DA722C;
+  border-color: rgba(0, 0, 0, 0);
+}
+.btn .badge {
+  color: #DA722C;
+  background-color: white;
+}
+
+header {
+  background-image: linear-gradient(to bottom, #6F7DFB 0%, #303A9B 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF6F7DFB", endColorstr="#FF303A9B", GradientType=0);
+  background-repeat: repeat-x;
+}
+
+#nav-bar {
+  position: fixed;
+  top: -50px;
+  padding: 20px;
+  width: 1200px;
+  overflow: hidden;
+  background-color: black;
+  padding-top: 20px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.container .logo {
+  font-size: 40px;
+  font-weight: 900;
+  text-align: left;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+.container .menu {
+  gap: 5vh;
+}
+.container .menu li {
+  list-style: none;
+}
+.container .menu li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+.container .menu li a .list-group-item-red {
+  color: black;
+  background-color: blue;
+}
+.container .menu li a a.list-group-item-red,
+.container .menu li a button.list-group-item-red {
+  color: black;
+}
+.container .menu li a a.list-group-item-red .list-group-item-heading,
+.container .menu li a button.list-group-item-red .list-group-item-heading {
+  color: inherit;
+}
+.container .menu li a a.list-group-item-red:hover, .container .menu li a a.list-group-item-red:focus,
+.container .menu li a button.list-group-item-red:hover,
+.container .menu li a button.list-group-item-red:focus {
+  color: black;
+  background-color: #0000e6;
+}
+.container .menu li a a.list-group-item-red.active, .container .menu li a a.list-group-item-red.active:hover, .container .menu li a a.list-group-item-red.active:focus,
+.container .menu li a button.list-group-item-red.active,
+.container .menu li a button.list-group-item-red.active:hover,
+.container .menu li a button.list-group-item-red.active:focus {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+.container .hero__section {
+  height: 92vh;
+  position: relative;
+}
+.container .hero__section .left {
+  position: absolute;
+  bottom: 35vh;
+}
+.container .hero__section .left .title-text {
+  font-size: 50px;
+  font-weight: 900;
+  text-align: left;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  padding-right: 150px;
+}
+.container .hero__section .left p {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: left;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 30px 0px;
+  padding-right: 120px;
+}
+.container .hero__section .right img {
+  position: absolute;
+  scale: 80%;
+  right: 0px;
+  bottom: -65px;
+}
+.container .hero__section .achievement-cards {
+  position: absolute;
+  top: 200px;
+  left: 500px;
+}
+.container .hero__section .achievement-cards .enrolled {
+  position: relative;
+  left: 20px;
+}
+.container .hero__section .achievement-cards .achievement-card .content {
+  position: relative;
+  padding: 15px;
+  width: 200px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 24px;
+  z-index: 2;
+}
+.container .hero__section .achievement-cards .achievement-card .content h3 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #023047;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+.container .hero__section .achievement-cards .achievement-card .content img {
+  margin: 0;
+}
+.container .hero__section .achievement-cards .achievement-card .content p {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  color: #023047;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.container .hero__section .achievement-cards .achievement-card .bg {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  background-image: linear-gradient(rgba(111, 125, 251, 0), rgba(2, 48, 71, 0.5));
+  bottom: 90px;
+  left: 10px;
+  border-radius: 24px;
+  z-index: 1;
+}
+
+.container .testimonials-section {
+  height: 700px;
+}
+.container .testimonials-section .left {
+  position: relative;
+  margin-right: 50px;
+}
+.container .testimonials-section .left :nth-child(1) .content:first-child {
+  background-color: #6F7DFB;
+}
+.container .testimonials-section .left :nth-child(2) .content:first-child {
+  background-color: #DA722C;
+}
+.container .testimonials-section .left::before {
+  content: "";
+  width: 5%;
+  height: 85%;
+  background-color: #023047;
+  scale: 100%;
+  position: absolute;
+  left: 80px;
+  top: 45px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 30px;
+}
+.container .testimonials-section .left .testimonials-card {
+  display: block;
+  background-color: #fff;
+  width: 500px;
+  border-radius: 30px;
+  top: 50px;
+  margin: 50px 0px;
+  position: relative;
+  box-shadow: 5px 10px 50px rgba(0, 0, 0, 0.2);
+}
+.container .testimonials-section .left .testimonials-card:first-child {
+  left: -20px;
+  height: 250px;
+}
+.container .testimonials-section .left .testimonials-card:first-child img {
+  scale: 55%;
+  position: absolute;
+  left: 230px;
+  top: 5px;
+  right: 20px;
+  bottom: 0px;
+}
+.container .testimonials-section .left .testimonials-card:last-child {
+  height: 200px;
+}
+.container .testimonials-section .left .testimonials-card:last-child img {
+  scale: 55%;
+  position: absolute;
+  left: 230px;
+  top: -15px;
+  right: 20px;
+  bottom: 0px;
+}
+.container .testimonials-section .left .testimonials-card .content {
+  font-size: 18px;
+  font-weight: 900;
+  text-align: left;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  padding: 24px 32px;
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  position: absolute;
+}
+.container .testimonials-section .left .testimonials-card .info {
+  position: absolute;
+  padding: 24px 32px;
+  bottom: 0px;
+}
+.container .testimonials-section .left .testimonials-card .info h4 {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: left;
+  color: #023047;
+  font-family: "Raleway", sans-serif;
+}
+.container .testimonials-section .left .testimonials-card .info p {
+  font-size: 18px;
+  font-weight: 200;
+  text-align: left;
+  color: #023047;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.container .testimonials-section .right {
+  margin-top: 200px;
+}
+.container .testimonials-section .right h1 {
+  font-size: 60px;
+  font-weight: 900;
+  text-align: left;
+  color: #023047;
+  font-family: "Raleway", sans-serif;
+}
+.container .testimonials-section .right p {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  color: #023047;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.course-section {
+  background-image: linear-gradient(to bottom, #6F7DFB 0%, #303A9B 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF6F7DFB", endColorstr="#FF303A9B", GradientType=0);
+  background-repeat: repeat-x;
+}
+.course-section .container {
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+.course-section .container .title {
+  font-size: 60px;
+  font-weight: 900;
+  text-align: center;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 50px;
+}
+.course-section .container .course-cards {
+  gap: 7 0px;
+}
+.course-section .container .course-cards .course-card {
+  background-color: white;
+  width: 500px;
+  height: 400px;
+  border-radius: 24px;
+  position: relative;
+}
+.course-section .container .course-cards .course-card::after {
+  content: "";
+  width: 87%;
+  height: 2%;
+  background-color: #023047;
+  border-radius: 24px;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.course-section .container .course-cards .course-card img {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  border-radius: 24px;
+  width: 87%;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+.course-section .container .course-cards .course-card .info {
+  width: 85%;
+  position: absolute;
+  top: 250px;
+  left: 0%;
+  bottom: -5%;
+  transform: translate(8%, 25%);
+}
+.course-section .container .course-cards .course-card .info h3 {
+  font-size: 30px;
+  font-weight: 900;
+  text-align: left;
+  color: #023047;
+  font-family: "Raleway", sans-serif;
+}
+.course-section .container .course-cards .course-card .info .duration {
+  position: absolute;
+  right: 0%;
+  bottom: 70%;
+  font-size: 18px;
+  font-weight: 900;
+  text-align: left;
+  color: #023047;
+  font-family: "Raleway", sans-serif;
+}
+.course-section .container .course-cards .course-card .info .duration::before {
+  content: "";
+  color: #023047;
+  width: 20px;
+  height: 20px;
+  padding: 15px;
+  background-image: url("../images/clock.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.course-section .container a {
+  float: right;
+  margin-top: 50px;
+}
+
+.wrapper .app-section {
+  padding: 50px 0px;
+}
+.wrapper .app-section h2 {
+  font-size: 60px;
+  font-weight: 900;
+  text-align: center;
+  color: #023047;
+  font-family: "Raleway", sans-serif;
+}
+.wrapper .app-section p {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: #023047;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.wrapper .app-section .app-button .app-btn {
+  width: 300px;
+  gap: 20px;
+  margin: 20px;
+  padding: 15px 30px;
+  background-color: black;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.wrapper .app-section .app-button img {
+  margin: 0;
+  scale: 90%;
+}
+.wrapper .app-section .app-button p {
+  margin: 0px;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: left;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+footer {
+  background-color: #070917;
+  height: 30vh;
+}
+footer .container {
+  background-color: #070917;
+}
+footer .container .nav-section .item {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+footer .container .nav-section .item h4 {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  color: #DA722C;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 20px;
+}
+footer .container .nav-section .item li, footer .container .nav-section .item p, footer .container .nav-section .item i {
+  list-style: none;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+footer .container .nav-section .item img {
+  margin-left: 20px;
+}
+footer .container .nav-section .item .search-container {
+  background-color: #fff;
+  margin-left: 20px;
+  margin-top: 30px;
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+footer .container .nav-section .item .search-container form {
+  display: flex;
+  justify-items: center;
+}
+footer .container .nav-section .item .search-container form input {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  margin-top: 2px;
+}
+footer .container .nav-section .item .search-container form .submit-btn {
+  scale: 80%;
+  padding: 0px 28px;
+  border: none;
+  margin-top: 2px;
+  margin-right: -7px;
+  background-color: #023047;
+  border-radius: 10px;
+  float: right;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+footer .container {
+  background-color: #070917;
+}
+footer .container p {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media screen and (max-width: 400px) {
+  .container #nav-bar {
+    position: relative;
+    top: -20px;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 0;
+  }
+  .container #nav-bar .logo {
+    font-size: 40px;
+    font-weight: 900;
+    text-align: left;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    margin-top: -15px;
+    padding-left: 10px;
+  }
+  .container .menu li a {
+    display: none;
+  }
+  .container .menu .btn {
+    display: none;
+  }
+  .container .hero__section .left {
+    width: 100%;
+    position: absolute;
+    top: 5px;
+    padding-left: 10px;
+  }
+  .container .hero__section .left .title-text {
+    font-size: 36px;
+    font-weight: 900;
+    text-align: left;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    padding-right: 0px;
+  }
+  .container .hero__section .left p {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 10px 0px;
+    padding-right: 0px;
+    line-height: 30px;
+  }
+  .container .hero__section .left .btn {
+    margin-top: 10px;
+    padding: 0px 20px;
+  }
+  .container .hero__section .right img {
+    position: absolute;
+    scale: 65%;
+    right: -200px;
+    bottom: -113px;
+  }
+  .container .hero__section .achievement-cards {
+    position: absolute;
+    top: 265px;
+    left: 10px;
+  }
+  .container .hero__section .achievement-cards .enrolled {
+    position: relative;
+    left: -3px;
+  }
+  .container .hero__section .achievement-cards .achievement-card {
+    bottom: -50px;
+  }
+  .container .hero__section .achievement-cards .achievement-card .content {
+    position: relative;
+    padding: -15px;
+    width: 200px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 24px;
+    z-index: 2;
+  }
+  .container .hero__section .achievement-cards .achievement-card .content h3 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #023047;
+    font-family: "Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+  }
+  .container .hero__section .achievement-cards .achievement-card .content img {
+    margin: 0;
+  }
+  .container .hero__section .achievement-cards .achievement-card .content p {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    color: #023047;
+    font-family: "Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container .hero__section .achievement-cards .achievement-card .bg {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-image: linear-gradient(#6f7dfb, rgba(2, 48, 71, 0.5));
+    bottom: 90px;
+    left: 10px;
+    border-radius: 24px;
+    z-index: 1;
+  }
+  .container .testimonials-section {
+    height: 1000px;
+    flex-wrap: wrap-reverse;
+  }
+  .container .testimonials-section .left {
+    width: 100%;
+    position: relative;
+    margin-right: 0px;
+    margin-top: -200px;
+  }
+  .container .testimonials-section .left :nth-child(1) .content:first-child {
+    background-color: #6F7DFB;
+  }
+  .container .testimonials-section .left :nth-child(2) .content:first-child {
+    background-color: #DA722C;
+  }
+  .container .testimonials-section .left::before {
+    content: "";
+    width: 8%;
+    height: 73%;
+    background-color: #023047;
+    scale: 100%;
+    position: absolute;
+    left: 80px;
+    top: 30px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 30px;
+  }
+  .container .testimonials-section .left .testimonials-card {
+    display: block;
+    background-color: #fff;
+    width: 350px;
+    border-radius: 24px;
+    top: 10px;
+    margin: 50px 0px;
+    position: relative;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
+  }
+  .container .testimonials-section .left .testimonials-card:first-child {
+    left: 0px;
+    height: 230px;
+  }
+  .container .testimonials-section .left .testimonials-card:first-child img {
+    scale: 45%;
+    position: absolute;
+    left: 150px;
+    top: 5px;
+    right: 20px;
+    bottom: 0px;
+  }
+  .container .testimonials-section .left .testimonials-card:last-child {
+    height: 180px;
+  }
+  .container .testimonials-section .left .testimonials-card:last-child img {
+    scale: 45%;
+    position: absolute;
+    left: 150px;
+    top: -15px;
+    right: 20px;
+    bottom: 0px;
+  }
+  .container .testimonials-section .left .testimonials-card .content {
+    font-size: 18px;
+    font-weight: 900;
+    text-align: left;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    padding: 24px 32px;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    position: absolute;
+  }
+  .container .testimonials-section .left .testimonials-card .info {
+    position: absolute;
+    padding: 24px 32px;
+    bottom: 0px;
+  }
+  .container .testimonials-section .left .testimonials-card .info h4 {
+    font-size: 24px;
+    font-weight: 900;
+    text-align: left;
+    color: #023047;
+    font-family: "Raleway", sans-serif;
+  }
+  .container .testimonials-section .left .testimonials-card .info p {
+    font-size: 18px;
+    font-weight: 200;
+    text-align: left;
+    color: #023047;
+    font-family: "Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container .testimonials-section .right {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .container .testimonials-section .right h1 {
+    font-size: 36px;
+    font-weight: 900;
+    text-align: left;
+    color: #023047;
+    font-family: "Raleway", sans-serif;
+  }
+  .container .testimonials-section .right p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: #023047;
+    font-family: "Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 10px;
+  }
+  .container .testimonials-section .right .btn {
+    float: right;
+    position: relative;
+    bottom: -600px;
+  }
+  .course-section {
+    background-image: linear-gradient(to bottom, #6F7DFB 0%, #303A9B 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF6F7DFB", endColorstr="#FF303A9B", GradientType=0);
+    background-repeat: repeat-x;
+  }
+  .course-section .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .course-section .container .title {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    padding-bottom: 50px;
+  }
+  .course-section .container .course-cards {
+    flex-wrap: wrap;
+  }
+  .course-section .container .course-cards .course-card {
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    border-radius: 24px;
+    margin-bottom: 80px;
+    position: relative;
+  }
+  .course-section .container .course-cards .course-card::after {
+    content: "";
+    width: 87%;
+    height: 2%;
+    background-color: #023047;
+    border-radius: 24px;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  .course-section .container .course-cards .course-card img {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 24px;
+    width: 87%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  }
+  .course-section .container .course-cards .course-card .info {
+    width: 85%;
+    position: absolute;
+    top: 160px;
+    left: 0%;
+    bottom: -5%;
+    transform: translate(8%, 25%);
+  }
+  .course-section .container .course-cards .course-card .info h3 {
+    font-size: 24px;
+    font-weight: 900;
+    text-align: left;
+    color: #023047;
+    font-family: "Raleway", sans-serif;
+    margin-right: 30px;
+  }
+  .course-section .container .course-cards .course-card .info .duration {
+    position: absolute;
+    right: 0%;
+    bottom: 70%;
+    font-size: 14px;
+    font-weight: 900;
+    text-align: left;
+    color: #023047;
+    font-family: "Raleway", sans-serif;
+  }
+  .course-section .container .course-cards .course-card .info .duration::before {
+    content: "";
+    color: #023047;
+    width: 20px;
+    height: 20px;
+    padding: 15px;
+    background-image: url("../images/clock.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .course-section .container a {
+    float: right;
+    margin-top: -40px;
+    padding: 0px 20px;
+    border-radius: 30px;
+  }
+  .wrapper .app-section {
+    padding: 50px 0px;
+  }
+  .wrapper .app-section h2 {
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+    color: #023047;
+    font-family: "Raleway", sans-serif;
+  }
+  .wrapper .app-section p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #023047;
+    font-family: "Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 20px 50px;
+  }
+  .wrapper .app-section .app-button {
+    flex-wrap: wrap;
+  }
+  footer {
+    background-color: #070917;
+    height: 30vh;
+  }
+  footer .container {
+    background-color: #070917;
+  }
+  footer .container .nav-section {
+    flex-wrap: wrap;
+  }
+  footer .container .nav-section .item {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    cursor: pointer;
+  }
+  footer .container .nav-section .item h4 {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #DA722C;
+    font-family: "Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 20px;
+  }
+  footer .container .nav-section .item li, footer .container .nav-section .item p, footer .container .nav-section .item i {
+    margin-top: 10px;
+    margin-left: 0px;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  footer .container .nav-section .item ul {
+    padding-left: 0px;
+    margin: 0;
+  }
+  footer .container .nav-section .item img {
+    position: relative;
+    left: 110px;
+  }
+  footer .container .nav-section .item .search-container {
+    position: relative;
+    left: 25px;
+    width: 100%;
+    background-color: #fff;
+    margin-left: 0;
+    margin-top: 30px;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  footer .container .nav-section .item .search-container form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer .container .nav-section .item .search-container form input {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    margin-top: 2px;
+  }
+  footer .container .nav-section .item .search-container form .submit-btn {
+    scale: 80%;
+    padding: 5px 28px;
+    border: none;
+    margin-top: 10px;
+    margin-right: -7px;
+    background-color: #023047;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    left: 80px;
+  }
+  footer .container {
+    background-color: #070917;
+    padding-bottom: 50px;
+  }
+  footer .container p {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}/*# sourceMappingURL=style.css.map */
